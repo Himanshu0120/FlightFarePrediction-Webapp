@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+        h1{
+            color: white;
+            background-color: #698f92;
+            height: 40px;
+            width: 102%;
+            text-align: center;
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+        body{
+            background-color: #afd1d3;
+        }
+        div.form{
+            -webkit-border-radius: 20px;
+            background-color: white;
+            align-content: center;
+            padding: 10px;
+        }
+        #submit {
+            margin-left: 45%;
+            margin-top: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            font-size: 16px;
+            border:1px solid transparent;
+            border-radius: 6px;
+
+        }
+        #submit:hover{
+            background-color: grey;
+        }
+        .subheading{
+            
+            margin-top: 70px;
+            text-align: center;
+            color:rgb(68, 68, 71) ;
+        }
+        div.box{
+            
+            font-family:'Times New Roman', Times, serif;
+            display: inline-block;
+            margin-left: 80px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 100px;
+            width: 350px;
+            -webkit-border-radius: 20px;
+            -webkit-box-shadow: 5px 5px 5px 5px #777777;
+            background-color: rgb(205, 242, 243);
+        }
+        </style>
+
+    </head>
+    <body>
+        <h1>Flight Price Prediction</h1>
+        <h2 class="subheading">Enter the following details :</h2>
+        <div class="Form">
+        <form action='result/' method="GET">
+            <div class="box">
+            <h3>Departure Date and Time</h3><input type='datetime-local' name='Departure_Date'>
+            </div>
+            <div class="box">
+            <h3>Arrival Date and Time</h3><input type='datetime-local' name="Arrival_Date">
+            </div>
+            <div class="box">
+            <h3>Source</h3><select name='Source'>
+                <option value='Delhi'>Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+            </div>
+            <div class="box">
+            <h3>Destination</h3><select name="Destination">
+                <option value="Delhi">Delhi</option>
+                <option value="Hydrabad">Hydrabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Cochin">Cochin</option>
+            </select>
+            </div>
+            <div class="box">
+            <h3>Stops</h3><select name='Stops'>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+            <div class="box">
+            <h3>Choose the airline</h3><select name="Airline">
+                {% for i in list%}
+                <option value="{{i}}">{{i}}</option>
+                {% endfor %}
+            </select>
+            </div>
+            </div>
+            <div >
+            <input id="submit" type="submit" value='Check Price' name="Enter">
+            </div>
+        </form>
+        <p>
+            &#xa9 Himanshu Srivastava
+        </p>
+    </body>
+</html>
