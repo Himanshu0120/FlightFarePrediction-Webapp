@@ -8,4 +8,4 @@ After running the command you wil get an IP address which is to be pasted on you
 
 ### Deployment
 This webapp is deployed on Heroku Cloud platform.
-Link to access the app - https://dashboard.heroku.com/apps/flight-fare-prediction112
+Link to access the app - https://flight-fare-prediction112.herokuapp.com/
