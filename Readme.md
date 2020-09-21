@@ -1,10 +1,16 @@
 # FlightPricePrediction using Machine Learning
 
-This webapp is made using django , HTML and CSS and the Machine Learning algorithm used is XGBoostRegressor.
+A machine learning project to predict the price for domestic flights in India with deployment.
 
-To run the webapp open the cmd window in the directory where the manage.py file is located and run the command : python manage.py runserver
+### Problem Statement
+The task is to get an estimate of the price of flights in India given the details about the flights like source,destination,etc.
 
-After running the command you wil get an IP address which is to be pasted on your web browser to acess the webapp 
+### Data
+The dataset used is available on kaggle.
+The dataset contained information like source,destination,departure date and time,arrival date and time , stops and price as target variable and data preprocessing was required to convert this data to numerical digits and breaking of certain features like date to month and day , time to hours and minutes and one hot encoding for sourse and destinations.
+
+### Performance Metric
+Accuracy score is used to compare the performance for different algorithms and finally XGBoost is used as it gave the best results.
 
 ### Deployment
 This webapp is deployed on Heroku Cloud platform.
