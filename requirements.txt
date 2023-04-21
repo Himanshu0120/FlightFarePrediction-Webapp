@@ -13,7 +13,7 @@ scikit-learn==0.23.1
 scipy==1.5.1
 six==1.15.0
 sklearn==0.0
-sqlparse==0.3.1
+sqlparse==0.4.4
 threadpoolctl==2.1.0
 toml==0.10.1
 wrapt==1.12.1
